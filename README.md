@@ -1,4 +1,4 @@
-# CSV to SQLite Streamlit App with Foreign Keys
+# CHAT with SQLite Streamlit App with Foreign Keys
 
 ## Table of Content
 - [Overview](#overview)
@@ -12,7 +12,7 @@
 - [Credits](#credits)
   
 ## Overview
-This project is a Streamlit application that allows users to upload multiple CSV files and create a SQLite database with tables corresponding to each CSV file. The application also handles foreign key relationships between the tables based on common integer columns found in the CSV files.
+This project is a Streamlit application that allows users to upload multiple CSV files and create a SQLite database with tables corresponding to each CSV file. The application also handles foreign key relationships between the tables based on common integer columns found in the CSV files and it allows you to query your database in natural language.
 
 ## Motivation
 The motivation behind this project was to provide a user-friendly way to convert CSV data into a SQLite database, while also automatically handling foreign key relationships between the tables. This can be useful for data analysis, querying, and integration with other applications that work with SQLite databases.
