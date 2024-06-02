@@ -9,10 +9,8 @@
 - [To Do](#to-do)
 - [Bug / Feature Request](#bug---feature-request)
 - [Technologies Used](#technologies-used)
-- [Team](#team)
-- [License](#license)
 - [Credits](#credits)
-
+  
 ## Overview
 This project is a Streamlit application that allows users to upload multiple CSV files and create a SQLite database with tables corresponding to each CSV file. The application also handles foreign key relationships between the tables based on common integer columns found in the CSV files.
 
@@ -44,3 +42,38 @@ The application follows these steps:
 
 ```bash
 pip install -r requirements.txt
+```
+3. Set up your HuggingFace API token by creating a .env file in the project directory and adding the following line:
+```bash
+huggingfacehub_api_token=YOUR_API_TOKEN
+```
+4. Run the Streamlit app with the following command:
+```bash
+streamlit run app.py
+```
+Directory Tree
+```bash
+│   app.py
+│   README.md
+│   requirements.txt
+└───data
+        # CSV files will be stored here
+```
+## To Do
+
+Implement support for handling more complex data types in CSV files.
+Improve the foreign key detection algorithm for better accuracy.
+Add support for creating indexes on columns.
+
+## Bug / Feature Request
+If you find a bug or have a feature request, please open an issue here.
+
+## Technologies Used
+<img target="_blank" src="https://streamlit.io/images/brand/streamlit-mark-color.png" width=200>
+<img target="_blank" src="https://pandas.pydata.org/static/img/pandas.svg" width=200>
+<img target="_blank" src="https://www.sqlite.org/images/sqlite370_banner.gif" width=200>
+<img target="_blank" src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" width=200>
+
+## Credits
+HuggingFace
+LangChain
