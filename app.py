@@ -21,7 +21,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger()
 
 # Create or connect to a SQLite database
-conn = sqlite3.connect('testdb.db')
+conn = sqlite3.connect('app.db')
 c = conn.cursor()
 
 def create_table_with_fk(table_name, df, foreign_keys):
@@ -76,7 +76,7 @@ def main():
     )
 
     # Connect to the new database
-    db = SQLDatabase.from_uri("sqlite:///testdb.db", sample_rows_in_table_info=3)
+    db = SQLDatabase.from_uri("sqlite:///app.db", sample_rows_in_table_info=3)
 
     prompt_template = '''
         Given an input question, first create a syntactically correct SQLite query to run, then look at the results of the query and return the answer to the input question.
